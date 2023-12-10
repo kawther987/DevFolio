@@ -1,0 +1,53 @@
+.details-home,
+#blog-home {
+  background: linear-gradient(rgba(0, 119, 255, 0.7), rgba(0, 119, 255, 0.7)),
+    url("../img/overlay-bg.jpg") center / cover;
+}
+
+.details-home .container,
+#blog-home .container {
+  min-height: 60vh;
+}
+.details-home h2,
+#blog-home h2 {
+  font-size: 3.5rem;
+}
+.details-home .breadcrumb .breadcrumb-item::before,
+#blog-home .breadcrumb .breadcrumb-item::before {
+  color: rgb(205, 225, 248);
+}
+
+.details-info .carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid #0078ff;
+  margin: 10px 4px;
+}
+.details-info .carousel-indicators .active {
+  background-color: #0078ff;
+}
+#blog-info .blog-menu li {
+  position: relative;
+}
+#blog-info .blog-menu li::before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 1px;
+  left: 0;
+  background-color: #0078ff;
+  top: 12px;
+}
+#blog-info .blog-menu li a {
+  transition: 0.5s color ease-in-out;
+}
+#blog-info .blog-menu li a:hover {
+  color: #0078ff !important;
+}
+@media screen and (max-width: 580px) {
+  .details-home h2,
+  #blog-home h2 {
+    font-size: 2.5rem;
+  }
+}
